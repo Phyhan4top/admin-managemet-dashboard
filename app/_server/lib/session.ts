@@ -4,8 +4,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { ADMIN_TOKEN} from '@server/utils';
 import { SignJWT, jwtVerify } from 'jose';
 
-const secretKey ='cvgcfmgCFGFtdtshftmtwtfthsfamgh3fd42fd3f53j4m854634hhhhhhhfh';
-const key = new TextEncoder().encode(secretKey);
+const key = new TextEncoder().encode(process.env.JWT_SECRET_KEY);
 
 export async function encrypt(payload: any) {
   return await new SignJWT(payload)
