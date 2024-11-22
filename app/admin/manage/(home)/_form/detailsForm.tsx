@@ -27,6 +27,7 @@ const statusOptions = [
 ];
 const DetailsForm = () => {
   const form = useCreateAdminFormContext();
+  
   const userRole = localStorage.getItem('role');
   return (
     <Fragment>
