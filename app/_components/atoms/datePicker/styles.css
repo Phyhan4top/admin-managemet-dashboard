@@ -1,0 +1,18 @@
+.rdp {
+  --rdp-accent-color: #292929 !important;
+  --rdp-accent-color-dark: #292929 !important;
+}
+
+.rdp-dropdown_month {
+  margin-right: 4px;
+  cursor: pointer;
+}
+.rdp-dropdown_month svg {
+  display: none;
+}
+.rdp-dropdown_year {
+  cursor: pointer;
+}
+.rdp-dropdown_year svg {
+  display: none;
+}

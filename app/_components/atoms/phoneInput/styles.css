@@ -1,0 +1,7 @@
+/* Hide the number input counter buttons */
+.hideBtnCounter input[type='number']::-webkit-inner-spin-button,
+.hideBtnCounter input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  display: none;
+  margin: 0; /* Optional: Remove any default margin */
+}

@@ -1,0 +1,36 @@
+table {
+  /* box-shadow and borders will not work with positon: sticky otherwise */
+  /* border-collapse: separate !important; */
+  border-spacing: 0;
+}
+
+/* tr > :first-child { */
+/* padding-left: 10px; */
+/* } */
+thead tr {
+  background-color: #fafafa;
+}
+tr {
+  background-color: #fff;
+  opacity: 1 !important;
+}
+tr:not(:last-child) {
+  border-bottom: 1px solid #dcdcdc;
+}
+.resizer {
+  /* background: rgba(0, 0, 0, 0.2); */
+  background: white;
+  cursor: col-resize;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  touch-action: none;
+  user-select: none;
+  width: 1px;
+}
+
+.resizer.isResizing {
+  background: blue;
+  opacity: 1;
+}

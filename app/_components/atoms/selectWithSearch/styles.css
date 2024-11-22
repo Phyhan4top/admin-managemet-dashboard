@@ -1,0 +1,13 @@
+.uiselect {
+  border: solid 1px #dcdcdc;
+}
+.uiselect + label::after,
+.uiselect + label::before {
+  border: none;
+}
+.uiselect ~ ul li {
+  color: #292929;
+}
+.uiselect ~ ul {
+  font-family: inherit !important;
+}

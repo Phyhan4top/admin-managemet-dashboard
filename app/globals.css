@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #fefefe;
+  font-weight: normal;
+}
+/*----------- otp inputs----------------*/
+
+/* Chrome, Safari, Edge, Opera */
+.otp-input input::-webkit-outer-spin-button,
+.otp-input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.otp-input input[type='number'] {
+  -moz-appearance: textfield;
+}
+/*----------- otp inputs----------------*/
+
+/* Hide the clear icon in a search input field */
+input[type='search']::-webkit-search-clear-button {
+  display: none; /* Hide the clear icon for webkit browsers */
+}
+
+button:focus:not(:focus-visible) {
+  outline: none !important; /* Remove default outline on focus */
+}
+
+button:focus-visible {
+  box-shadow: none !important; /* Remove box shadow on focus-visible */
+}
+
+/* ----horizontal slider */
+.hidehorizontalscroll::-webkit-scrollbar {
+  display: none;
+}
+.hidehorizontalscroll {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* delete this use for testing route interception  */
+
+.modal-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  width: 80%;
+  max-width: 500px;
+  height: auto;
+  max-height: 500px;
+  border: none;
+  border-radius: 12px;
+  background-color: white;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  border: none;
+  border-radius: 15px; /* Circular shape */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 24px; /* Adjust font size as needed */
+}
+
+.close-button:hover {
+  background-color: #eee;
+}
+
+.close-button:after {
+  content: 'x';
+  color: black;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: #eee;
+  border-radius: 8px;
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  font-weight: 500;
+  max-width: 200px;
+}
+
+@media (max-width: 600px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
+/* editor styling*/
+.editor-content {
+  color: #656565;
+}
+.editor-content h1 {
+  font-size: 4.20875rem;
+  line-height: 5rem;
+  font-weight: 500;
+  color: #292929;
+}
+.editor-content h2 {
+  font-size: 3.1575rem;
+  line-height: 3.7875rem;
+  font-weight: 500;
+  color: #292929;
+}
+.editor-content h3 {
+  font-size: 2.36875rem;
+  line-height: 2.84375rem;
+  font-weight: 500;
+  color: #292929;
+}
+.editor-content h4 {
+  font-size: 1.776875rem;
+  line-height: 2.13125rem;
+  font-weight: 500;
+  color: #292929;
+}
+.editor-content h5 {
+  font-size: 1.333125rem;
+  line-height: 1.6rem;
+  font-weight: 500;
+  color: #292929;
+}
+.editor-content h6 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #292929;
+}
+.editor-content p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.editor-content blockquote,
+.editor-content dl,
+.editor-content dd,
+.editor-content hr,
+.editor-content figure,
+.editor-content p,
+.editor-content pre {
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
